@@ -1,0 +1,17 @@
+p, h1, h2, h3, h4, h5{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.image_profile{
+    width: 100%;
+    height: 60px;
+    display: block;
+    
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50% 50%;
+        margin: 5px auto;
+        display: block;
+    }
+}

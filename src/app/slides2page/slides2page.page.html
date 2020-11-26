@@ -1,0 +1,230 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="blurple">
+    <ion-title>Basic Slides</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button icon="close" color="light" routerLink="/dashboard"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="width: 100%; height: 20px;"></div>
+
+  <!--basic slides 01
+  -->
+  <ion-item lines="none" mode="ios">
+    <ion-label color="blurple">Basic Slides 01</ion-label>
+    <ion-note mode="md">Profile</ion-note>
+  </ion-item>
+  
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p8.jpg" alt="" class="avatar-image"> 
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p5.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p11.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p18.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p16.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p4.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+  </ion-slides>
+  <div style="width: 100%; height: 20px;"></div>
+
+  <!--basic slides 02-->
+  <ion-item lines="none" mode="ios">
+    <ion-label color="blurple">Basic Slides 02</ion-label>
+  </ion-item>
+  
+  <ion-slides pager="false" [options]="slide2Opts">
+    <ion-slide>
+      <div class="card-slide">
+        <img src="../../assets/hotel/hotel-1209021_960_720.jpg" alt="">
+        <h4 style="font-weight: 500; font-size: 12px;">Hotel</h4>
+        <p style="font-weight: 100; font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="card-slide">
+        <img src="../../assets/hotel/hotel-1623064_960_720.jpg" alt="">
+        <h4 style="font-weight: 500; font-size: 12px;">Hotel</h4>
+        <p style="font-weight: 100; font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="card-slide">
+        <img src="../../assets/hotel/interior-1026452_1280.jpg" alt="">
+        <h4 style="font-weight: 500; font-size: 12px;">Hotel</h4>
+        <p style="font-weight: 100; font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="card-slide">
+        <img src="../../assets/hotel/hotel-1979406_960_720.webp" alt="">
+        <h4 style="font-weight: 500; font-size: 12px;">Hotel</h4>
+        <p style="font-weight: 100; font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="card-slide">
+        <img src="../../assets/hotel/villa-1737168_1280.jpg" alt="">
+        <h4 style="font-weight: 500; font-size: 12px;">Hotel</h4>
+        <p style="font-weight: 100; font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+ 
+  <div style="width: 100%; height: 20px;"></div>
+
+  <!--basic slides 03-->
+  <ion-item lines="none" mode="ios">
+    <ion-label color="blurple">Basic Slides 03</ion-label>
+    <ion-note slot="end" mode="md"><p>All</p></ion-note>
+  </ion-item>
+
+  <ion-slides pager="false" [options]="slide3Opts">
+    <ion-slide>
+      <p class="slidetext">Clothing</p>
+    </ion-slide>
+    <ion-slide>
+      <p class="slidetext">Shoes</p>
+    </ion-slide>
+    <ion-slide>
+      <p class="slidetext">Bags</p>
+    </ion-slide>
+    <ion-slide>
+      <p class="slidetext">Accessories</p>
+    </ion-slide>
+    <ion-slide>
+      <p class="slidetext">Footwear</p>
+    </ion-slide>
+    <ion-slide>
+      <p class="slidetext">Jewels</p>
+    </ion-slide>
+  </ion-slides>
+
+  <div style="width: 100%; height: 20px;"></div>
+
+  <!--basic slides 04-->
+  <ion-item lines="none" mode="ios">
+    <ion-label color="blurple">Basic Slides 04</ion-label>
+    <ion-note slot="end" mode="md"><p>Food</p></ion-note>
+  </ion-item>
+
+  <ion-slides pager="false" [options]="slide4Opts">
+    <ion-slide>
+     <ion-grid>
+       <ion-row>
+         <ion-col>
+          <img src="../../assets/foodicons/031-pizza.png" alt="" class="icon-img">
+         </ion-col>
+       </ion-row>
+       <ion-row>
+        <ion-col class="ion-text-center">
+          <p style="margin-top: -10px; font-weight: 100; font-size: 12px;">Pizza</p>
+        </ion-col>
+      </ion-row>
+     </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../assets/foodicons/032-hamburguesa.png" alt="" class="icon-img">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col class="ion-text-center">
+           <p style="margin-top: -10px; font-weight: 100; font-size: 12px;">Hambur</p>
+         </ion-col>
+       </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../assets/foodicons/033-coctel.png" alt="" class="icon-img">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col class="ion-text-center">
+           <p style="margin-top: -10px; font-weight: 100; font-size: 12px;">Coctel</p>
+         </ion-col>
+       </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../assets/foodicons/041-pez.png" alt="" class="icon-img">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col class="ion-text-center">
+           <p style="margin-top: -10px; font-weight: 100; font-size: 12px;">Fish</p>
+         </ion-col>
+       </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../assets/foodicons/042-cuerno.png" alt="" class="icon-img">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col class="ion-text-center">
+           <p style="margin-top: -10px; font-weight: 100; font-size: 12px;">Bread</p>
+         </ion-col>
+       </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../assets/foodicons/043-olla.png" alt="" class="icon-img">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+         <ion-col class="ion-text-center" >
+           <p style="margin-top: -10px; font-weight: 100; font-size: 12px;">Soup</p>
+         </ion-col>
+       </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

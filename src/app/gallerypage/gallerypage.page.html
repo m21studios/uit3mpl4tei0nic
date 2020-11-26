@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="blurple">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" routerLink="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Gallery App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" class="ion-text-center" (click)="sdmode()">
+        <ion-icon name="phone-portrait-outline" color="blurple"></ion-icon>
+        <p style="font-size: 14px; font-weight: 100;">From SD</p>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center" (click)="sdcloud()">
+        <ion-icon name="cloud-download-outline" color="blurple"></ion-icon>
+        <p style="font-size: 14px; font-weight: 100;">From CLOUD</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <div class="pins animate__animated animate__bounceInUp">
+    <div class="pin" *ngFor="let imagedata of imagelist">
+      <img [src]="imagedata.image" class="imgclass">
+    </div>
+  </div>
+
+   <!-- fab placed to the bottom end -->
+   <ion-fab vertical="bottom" horizontal="end" slot="fixed" mode="md">
+    <ion-fab-button color="blurple">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

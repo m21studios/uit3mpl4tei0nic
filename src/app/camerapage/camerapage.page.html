@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="blurple">
+    <ion-buttons slot="start">
+      <ion-back-button icon="close" color="light" routerLink="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Camera</ion-title>
+    <ion-icon name="images-outline" slot="end" (click)="activegallery()" style="margin-right: 12px;"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!--image test-->
+  <div class="image-preview animate__animated animate__bounceInUp">
+    <img src="{{preview}}" alt="">
+  </div>
+  <p class="ion-text-center" style="font-weight: 100; font-size: 14px;">select or take a new photo</p>
+
+  <div *ngIf="active_fab">
+    <!-- fab placed to the bottom and start and on the bottom edge of the content overlapping footer with a list to the right -->
+    <ion-fab vertical="center" horizontal="end" edge slot="fixed" 
+              style="margin-top: 100px;" 
+              class="animate__animated animate__bounceInRight" >
+      <ion-fab-button color="blurple">
+        <ion-icon name="camera-outline"></ion-icon>
+      </ion-fab-button>
+      <br>
+      <ion-fab-button color="success">
+        <ion-icon name="cloud-upload-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+
+
+  <div class="gallery animate__animated animate__bounceInUp" *ngIf="active_gallery">
+    <ion-content class="ion-padding">
+      <ion-item lines="none">
+        <ion-icon name="close-circle-outline" slot="end" (click)="activegallery()" color="blurple"></ion-icon>
+      </ion-item>
+      
+      <div class="pins">
+        <div class="pin" *ngFor="let imagedata of imagelist">
+          <img [src]="imagedata.image" class="imgclass">
+        </div>
+      </div>
+
+    </ion-content>
+  </div>
+</ion-content>

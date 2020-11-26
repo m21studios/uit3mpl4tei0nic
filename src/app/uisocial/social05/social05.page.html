@@ -1,0 +1,211 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-buttons slot="start">
+        <ion-back-button icon="close" color="blurple" routerLink="/social"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center" style="font-style: italic;"><h1>Instag</h1></ion-title>
+      <ion-icon name="chatbubble-ellipses-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Slides users profiles-->
+  <ion-slides pager="false" [options]="slideOpts" style="margin-top: 20px;">
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../../assets/add.svg" alt="" class="avatar-image"> 
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <p  style="font-weight: 100; font-size: 10px; margin-top: -15px;">My Story</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../../assets/profiles/p4.jpg" alt="" class="avatar-image"> 
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <p  style="font-weight: 100; font-size: 10px; margin-top: -15px;">Fer</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../../assets/profiles/p6.jpg" alt="" class="avatar-image">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <p  style="font-weight: 100; font-size: 10px; margin-top: -15px;">Isabella</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../../assets/profiles/p12.jpg" alt="" class="avatar-image">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <p  style="font-weight: 100; font-size: 10px; margin-top: -15px;">Ana</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>  
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../../assets/profiles/p19.jpg" alt="" class="avatar-image">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <p  style="font-weight: 100; font-size: 10px; margin-top: -15px;">Serg</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../../assets/profiles/p17.jpg" alt="" class="avatar-image">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <p  style="font-weight: 100; font-size: 10px; margin-top: -15px;">Moniq</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../../assets/profiles/p20.jpg" alt="" class="avatar-image">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <p  style="font-weight: 100; font-size: 10px; margin-top: -15px;">Rebeca</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+  <!--end users profiles-->
+
+  <!--navs button-->
+  <div class="navsbtn">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-icon name="home-outline" size="large" color="blurple"></ion-icon>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <ion-icon name="search-outline" size="large" color="blurple"></ion-icon>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <ion-icon name="add-circle-outline" size="large" color="blurple"></ion-icon>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <ion-icon name="heart-outline" size="large" color="blurple"></ion-icon>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <ion-icon name="person-circle-outline" size="large" color="blurple"></ion-icon>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </div>
+  <!--end navs button-->
+
+  <!--card stories-->
+  <ion-list>
+    <ion-list-header><h1>Stories</h1></ion-list-header>
+    <ion-card mode="ios">
+      <div class="img-card">
+        <img src="../../../assets/travel/coast-505858_960_720.jpg" alt="">
+      </div>
+      <ion-item color="transparent" lines="none" style="margin-top: -100px;">
+        <ion-avatar>
+          <img src="../../../assets/profiles/p4.jpg" alt="" 
+          style="width: 25px !important; height: 25px !important; border: 2px solid white;"> 
+        </ion-avatar>
+        <ion-label>
+          <p style="font-weight: 100; font-size: 16px; margin-left: 8px; color: rgb(14, 14, 14);">Fer Olvera</p>
+        </ion-label>
+        <ion-icon name="ellipsis-horizontal-outline" slot="end" color="dark" size="small"></ion-icon>
+      </ion-item>
+      <div style="height: 60px; width: 100%;"></div>
+      <ion-item lines="none">
+        <span><p>
+          <ion-icon name="heart-circle-outline" color="blurple"></ion-icon>
+          <strong style="font-weight: 100; font-size: 12px;"> 15  </strong>
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          <strong style="font-weight: 100; font-size: 12px;"> 393 </strong>
+          <ion-icon name="navigate-outline"></ion-icon>
+          
+        </p></span>
+        <ion-icon name="bookmark-outline" slot="end" size="small"></ion-icon>
+      </ion-item>
+      
+    </ion-card>
+
+    <ion-card mode="ios">
+      <div class="img-card">
+        <img src="../../../assets/travel/maldives-1993704_1280.jpg" alt="">
+      </div>
+      <ion-item color="transparent" lines="none" style="margin-top: -100px;">
+        <ion-avatar>
+          <img src="../../../assets/profiles/p6.jpg" alt="" 
+          style="width: 25px !important; height: 25px !important; border: 2px solid white;"> 
+        </ion-avatar>
+        <ion-label>
+          <p style="font-weight: 100; font-size: 16px; margin-left: 8px; color: rgb(14, 14, 14);">Sara Stone</p>
+        </ion-label>
+        <ion-icon name="ellipsis-horizontal-outline" slot="end" color="dark" size="small"></ion-icon>
+      </ion-item>
+      <div style="height: 60px; width: 100%;"></div>
+      <ion-item lines="none">
+        <span><p>
+          <ion-icon name="heart-circle-outline" color="blurple"></ion-icon>
+          <strong style="font-weight: 100; font-size: 12px;"> 15  </strong>
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          <strong style="font-weight: 100; font-size: 12px;"> 393 </strong>
+          <ion-icon name="navigate-outline"></ion-icon>
+          
+        </p></span>
+        <ion-icon name="bookmark-outline" slot="end" size="small"></ion-icon>
+      </ion-item>
+      
+    </ion-card>
+  </ion-list>
+  
+
+</ion-content>

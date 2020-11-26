@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="greek">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title size="small">Firebase CRUD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="logo animate__animated animate__bounceIn">
+    <h1>UI TEMPLATE</h1>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="greek">Firebase Crud</ion-card-title>
+      <ion-card-subtitle>Upload your Note tu Firebase</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-list lines="none">
+        <ion-item lines="inset">
+          <ion-label color="greek" position="floating">Title</ion-label>
+          <ion-input placeholder="Title content "></ion-input>
+        </ion-item>
+        <ion-item lines="inset">
+          <ion-label color="greek" position="floating">Text Information</ion-label>
+          <ion-textarea placeholder="Enter more information here..." >
+
+          </ion-textarea>
+        </ion-item>
+        <ion-item lines="inset">
+          <ion-label color="greek" position="floating">Category</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="option 1">Option 1</ion-select-option>
+            <ion-select-option value="option 2">Option 2</ion-select-option>
+            <ion-select-option value="option 3">Option 3</ion-select-option>
+            <ion-select-option value="option 4">Option 4</ion-select-option>
+            <ion-select-option value="option 5">Option 5</ion-select-option>
+          </ion-select>
+        </ion-item>
+        
+      </ion-list>
+     
+    </ion-card-content>
+    <ion-button color="greek" expand="block">Save</ion-button>
+  </ion-card>
+
+  <h1 style="margin-left: 12px; font-weight: 300; font-size: 2em;">Current Notes</h1>
+
+  <ion-list>
+    <ion-card>
+      
+      <ion-icon name="pencil-outline" color="greek" slot="end"></ion-icon>
+     
+
+      <ion-card-header>
+        <ion-card-title color="greek">Note 01</ion-card-title>
+        <ion-card-subtitle color="asphal">category</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptatem alias cupiditate repudiandae id eaque.
+        <br>
+        <ion-item>
+          <ion-icon name="trash-outline" slot="end" color="dark" size="small"></ion-icon>
+        </ion-item>
+        
+      </ion-card-content>
+      
+    </ion-card>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,106 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-back-button color="greek"></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header-->
+
+<ion-content class="ion-padding">
+  <ion-item lines="none">
+    <ion-icon name="chevron-back" slot="start" color="greek" routerLink="/profiles"></ion-icon>
+    <ion-icon name="ellipsis-vertical-outline" slot="end" color="greek"></ion-icon>
+  </ion-item>
+  <!--header profile-->
+  <div>
+    <div class="image_profile">
+      <img src="../../../assets/profiles/p6.jpg" alt="">
+    </div>
+    <h1 class="ion-text-center" style="font-size: 1.5em; font-weight:500; color: #3742fa;">Angela Mathews</h1>
+    <p class="ion-text-center" style="margin-top: -10px;">Lorem ipsum dolor sit amet consectetur.</p>
+  
+    <ion-segment>
+      <ion-segment-button value="message" color="greek">
+        <ion-label>Message</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="follow" color="greek">
+        <ion-label>Follow</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  
+    <ion-grid style="margin-top: -30px !important;">
+      <ion-row>
+        <ion-col size="4" class="ion-text-center">
+          <h1>186</h1>
+          <p style="font-weight: 600; font-size: 10px; margin-top: -10px;">Photos</p>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <h1>5</h1>
+          <p style="font-weight: 600; font-size: 10px; margin-top: -10px;">collections</p>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <h1>324</h1>
+          <p style="font-weight: 600; font-size: 10px; margin-top: -10px;">likes</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    <p class="ion-text-center">
+      <ion-icon name="location" color="greek"></ion-icon>
+      New York, USA
+    </p>
+  </div>
+  
+  <!--content-->
+  <div>
+    <ion-item lines="none">
+      <ion-label color="greek" style="font-weight: 700 !important;">Photos</ion-label>
+      <ion-note slot="end">More</ion-note>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="8">
+          <img src="../../../assets/profiles/p22.jpg" width="100%" height="124px" style="border-radius: 5px 5px 5px 5px;">
+        </ion-col>
+        <ion-col size="4">
+          <img src="../../../assets/profiles/p20.jpg" width="100%" height="60px" style="border-radius: 5px 5px 5px 5px;">
+          <img src="../../../assets/profiles/p17.jpg" width="100%" height="60px" style="border-radius: 5px 5px 5px 5px;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div>
+    <ion-item lines="none">
+      <ion-label color="greek" style="font-weight: 700 !important;">Collections</ion-label>
+      <ion-note slot="end">All</ion-note>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../../../assets/travel/mosque-615415_960_720.jpg" width="100%" height="124px" style="border-radius: 5px 5px 5px 5px;">
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="8">
+          <img src="../../../assets/travel/maldives-1993704_1280.jpg" width="100%" height="124px" style="border-radius: 5px 5px 5px 5px;">
+        </ion-col>
+        <ion-col size="4">
+          <img src="../../../assets/travel/canal-1209808_960_720.webp" width="100%" height="60px" style="border-radius: 5px 5px 5px 5px;">
+          <img src="../../../assets/travel/paris-1245970_960_720.webp" width="100%" height="60px" style="border-radius: 5px 5px 5px 5px;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-icon name="grid" color="greek" slot="end" size="large" style="margin-right: 12px !important;"></ion-icon>
+    <ion-icon name="layers" color="greek" slot="end" size="large" style="margin-right: 12px !important;"></ion-icon>
+    <ion-icon name="settings" color="greek" slot="end" size="large" style="margin-right: 12px !important;"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,192 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="watermelon">
+    <ion-item lines="none" color="transparent">
+      <ion-buttons slot="start">
+        <ion-back-button color="light" routerLink="/dashboard"></ion-back-button>
+      </ion-buttons>
+      <ion-title size="small">Video App</ion-title>
+      <ion-avatar slot="end" size="small">
+        <img src="../../assets/music/04.jpg" alt="">
+      </ion-avatar>
+    </ion-item>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+
+  <!--main canvas div-->
+  
+  <div>
+    <div class="videocanvas">
+      <video controls autoplay class="videoplay">
+        <source src="../../assets/Sea.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="videoinfo">
+      <h1 style="font-weight: 300; font-size: 16px; margin-left: 12px;">Name Video</h1>
+      <p style="margin-top: -10px; font-weight: 100; font-size: 12px; margin-left: 12px;">0:39 sec</p>
+    </div>
+  </div>
+  
+  
+  <!--more videos-->
+  <ion-label><h1 style="font-weight: 500; font-size: 28px; margin-left: 12px;">Trending</h1></ion-label>
+
+  <ion-chip color="watermelon" mode="ios" outline>
+    <ion-label >Music</ion-label>
+  </ion-chip>
+  <ion-chip color="watermelon" mode="ios" outline>
+    <ion-label >Movies</ion-label>
+  </ion-chip>
+  <ion-chip color="watermelon" mode="ios" outline>
+    <ion-label >Peoples</ion-label>
+  </ion-chip>
+  <ion-chip color="watermelon" mode="ios" outline>
+    <ion-label >City</ion-label>
+  </ion-chip>
+  <ion-chip color="watermelon" mode="ios" outline>
+    <ion-label >Cine</ion-label>
+  </ion-chip>
+  <ion-chip color="watermelon" mode="ios" outline>
+    <ion-label >Diy</ion-label>
+  </ion-chip>
+
+  <br>
+  <br>
+
+  <!--video list slides-->
+  <ion-label><h1 style="font-weight: 500; font-size: 28px; margin-left: 12px;">More Views</h1></ion-label>
+
+  <ion-slides  pager="false" [options]="slideOpts">
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <img src="../../assets/music/04.jpg" alt="" style="border-radius: 50% 50%; width: 42px; height: 42px;">
+          </ion-col>
+          <ion-col size="8">
+            <video autoplay style="width: 100%; height: 120px;">
+              <source src="../../assets/Sea.mp4" type="video/mp4">
+            </video>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+     
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <img src="../../assets/music/02.jpg" alt="" style="border-radius: 50% 50%; width: 42px; height: 42px;">
+          </ion-col>
+          <ion-col size="8">
+            <video autoplay style="width: 100%; height: 120px;">
+              <source src="../../assets/Sea.mp4" type="video/mp4">
+            </video>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <img src="../../assets/music/06.jpg" alt="" style="border-radius: 50% 50%; width: 42px; height: 42px;">
+          </ion-col>
+          <ion-col size="8">
+            <video autoplay style="width: 100%; height: 120px;">
+              <source src="../../assets/Sea.mp4" type="video/mp4">
+            </video>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+
+  <br>
+  <br>
+  <ion-card>
+    <div>
+      <ion-item lines="full">
+        <ion-avatar slot="start">
+          <img src="../../assets/profiles/p12.jpg" alt="">
+        </ion-avatar>
+        <ion-label>
+          <h1>Username</h1>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-text>
+          <p style="font-weight: 100; size: 8px !important; text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, 
+            necessitatibus temporibus quo, quisquam assumenda autem 
+            sunt id iste facere voluptatem eligendi. 
+            Excepturi dolor optio iusto!
+          </p>
+        </ion-text>
+        
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="share-social-outline" color="watermelon" slot="start"></ion-icon>
+        <ion-icon name="create-outline" slot="start"></ion-icon>
+      </ion-item>
+      
+    </div>
+  </ion-card>
+  <br>
+  <br>
+
+  <!--video list-->
+  <ion-list>
+    <ion-item lines="full">
+      <div>
+        <div class="videocanvas">
+          <video controls autoplay class="videoplay">
+            <source src="../../assets/Sea.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="videoinfo">
+          <h1 style="font-weight: 300; font-size: 16px; margin-left: 12px;">Name Video 1</h1>
+          <p style="margin-top: -10px; font-weight: 100; font-size: 12px; margin-left: 12px;">0:39 sec</p>
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item lines="full">
+      <div>
+        <div class="videocanvas">
+          <video controls autoplay class="videoplay">
+            <source src="../../assets/Sea.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="videoinfo">
+          <h1 style="font-weight: 300; font-size: 16px; margin-left: 12px;">Name Video 2</h1>
+          <p style="margin-top: -10px; font-weight: 100; font-size: 12px; margin-left: 12px;">0:39 sec</p>
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item lines="full">
+      <div>
+        <div class="videocanvas">
+          <video controls autoplay class="videoplay">
+            <source src="../../assets/Sea.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="videoinfo">
+          <h1 style="font-weight: 300; font-size: 16px; margin-left: 12px;">Name Video 3</h1>
+          <p style="margin-top: -10px; font-weight: 100; font-size: 12px; margin-left: 12px;">0:39 sec</p>
+        </div>
+      </div>
+    </ion-item>
+
+
+
+
+  </ion-list>
+  
+
+</ion-content>

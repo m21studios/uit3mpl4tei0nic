@@ -1,0 +1,25 @@
+p, h1, h2, h3, h4, h5{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.image_profile{
+    width: 100%;
+    height: 5em;
+
+    img{
+        width: 5em;
+        height: 5em;
+        border-radius: 25% 25% 25% 25%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.icon_add{
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 57%;
+    margin-top: -1em;
+    border-radius: 50% 50%;
+    background-color: rgb(255, 255, 255);
+}

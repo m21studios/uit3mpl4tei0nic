@@ -1,0 +1,17 @@
+p, h1, h2, h3, h4, h5{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.videocanvas{
+
+    width: 100%;
+    height: 220px;
+    margin: 2px auto;
+
+    .videoplay{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,18 @@
+p, h1, h2, h3, h4, h5{
+    font-family: 'Roboto', sans-serif;
+}
+
+.avatar-image{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.post-input{
+    width: 100%;
+    height: 260px;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgb(252, 252, 252);
+}

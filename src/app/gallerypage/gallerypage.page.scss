@@ -1,0 +1,18 @@
+p, h1, h2, h3, h4, h5{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.pins{
+    column-count: 2;
+}
+
+.pin{
+    display: inline-block;
+    margin: 0 2px 10px;
+    padding: 5px;
+}
+
+.imgclass{
+    width: 280px;
+    border-radius:4px 4px 4px 4px;
+}

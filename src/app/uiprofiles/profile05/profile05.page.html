@@ -1,0 +1,55 @@
+
+<ion-content>
+  <ion-item lines="none">
+    <ion-icon name="create-outline" slot="end" routerLink="/profiles"></ion-icon>
+  </ion-item>
+  
+  <p class="ion-text-center" style="font-size: 1.2em; font-weight: 300; margin-top: 1em;">Profile</p>
+ 
+  <div class="image_profile">
+    <img src="../../../assets/profiles/p1.jpg" alt="">
+    <div class="icon_add">
+      <ion-icon name="add-circle-outline" color="blurple"></ion-icon>
+    </div>
+  </div>
+  <div>
+    <p class="ion-text-center" style="font-size: 1.8em; font-weight: 500;">Myra Rose</p>
+    <p class="ion-text-center" style="font-size: 1em; font-weight: 100; margin-top: -2em;">myra_rose@email.com</p>
+  </div>
+  <br><br>
+  <ion-card mode="ios" color="greek">
+    <ion-item lines="none">
+      <ion-icon name="ribbon-outline" slot="start" color="greek"></ion-icon>
+      <ion-label>Subscriptions</ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end" color="greek"></ion-icon>
+    </ion-item>
+  </ion-card>
+  <ion-card mode="ios">
+    <ion-item lines="inset">
+      <ion-icon name="heart-circle-outline" slot="start" color="tomato"></ion-icon>
+      <ion-label>Fovourites</ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end" color="greek"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="inset">
+      <ion-icon name="share-social-outline" slot="start" color="blurple"></ion-icon>
+      <ion-label>Invite Friends</ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end" color="greek"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="inset">
+      <ion-icon name="settings-outline" slot="start" color="june"></ion-icon>
+      <ion-label>Settings</ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end" color="greek"></ion-icon>
+    </ion-item>
+  </ion-card>
+
+  <ion-card mode="ios" color="greek">
+    <ion-item lines="none" routerLink="/profiles">
+      <ion-icon name="exit-outline" slot="start" color="dark"></ion-icon>
+      <ion-label>Log Out</ion-label>
+      <!--ion-icon name="chevron-forward-outline" slot="end" color="greek"></ion-icon-->
+    </ion-item>
+  </ion-card>
+  
+</ion-content>

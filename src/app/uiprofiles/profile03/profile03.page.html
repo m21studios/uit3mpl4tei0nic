@@ -1,0 +1,65 @@
+
+<ion-content class="ion-padding">
+  <ion-item lines="none">
+    <ion-icon name="chevron-back-outline" slot="start" routerLink="/profiles"></ion-icon>
+    <ion-icon name="camera-outline" slot="end" color="asphal" style="margin-right: 8px;"></ion-icon>
+  </ion-item>
+  <h1 style="margin-left: 22px;">Edit Profile</h1>
+  <div class="image_profile">
+    <img src="../../../assets/profiles/p10.jpg" alt="">
+  </div>
+
+  <ion-list lines="none">
+    <ion-item>
+      <ion-label position="floating" color="asphal">UserName</ion-label>
+      <ion-input placeholder="Jhon Doe" slot="end" 
+        style="
+          text-align: right; 
+          margin-right: 8px; 
+          font-size: 12px; 
+          font-weight: 100;">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="asphal">Email</ion-label>
+      <ion-input placeholder="JhonDoe@email.com" slot="end" 
+        style="
+          text-align: right; 
+          margin-right: 8px; 
+          font-size: 12px; 
+          font-weight: 100;">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="asphal">Phone</ion-label>
+      <ion-input placeholder="+37 5550011" slot="end" 
+        style="
+          text-align: right; 
+          margin-right: 8px; 
+          font-size: 12px; 
+          font-weight: 100;">
+        </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="asphal">Date of Birth</ion-label>
+      <ion-input placeholder="20/05/1990" slot="end" 
+        style="
+          text-align: right; 
+          margin-right: 8px; 
+          font-size: 12px; 
+          font-weight: 100;">
+        </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="asphal">Address</ion-label>
+      <ion-input placeholder="123 avenue evergreen" slot="end" 
+        style="
+          text-align: right; 
+          margin-right: 8px; 
+          font-size: 12px; 
+          font-weight: 100;">
+        </ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button color="asphal" expand="block">Update Profile</ion-button>
+</ion-content>

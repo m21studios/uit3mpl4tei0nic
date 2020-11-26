@@ -1,0 +1,26 @@
+Lista de componentes
+01 - slides
+02 - login - ok
+03 - register - ok
+04 - recover account - ok
+05 - dashboard - ok
+06 - lateral menu - ok
+07 - cards
+08 - take photo
+09 - video show
+10 - play music
+11 - gallery
+12 - crud firebase
+13 - blog
+14 - list comment
+15 - parallax
+16 - wow animations
+17 - Animate css
+18 - MapBox Map - ok
+19 - Leaflet Map - ok 
+20 - Chart 
+21 - Notifications
+22 - Forms Validations
+23 - News
+24 -
+25 -

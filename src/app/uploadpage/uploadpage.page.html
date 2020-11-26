@@ -1,0 +1,95 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="blurple">
+    <ion-item lines="none" color="transparent">
+      <ion-buttons slot="start">
+        <ion-back-button color="light" routerLink="/dashboard"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Upload App</ion-title>
+      <ion-icon name="trending-up-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item lines=" full">
+    <ion-input placeholder="Select File to Input"></ion-input>
+    <ion-icon name="cloud-upload-outline" slot="end" color="blurple"></ion-icon>
+  </ion-item>
+  <ion-button expand="block" mode="ios" color="blurple">Upload</ion-button>
+
+  <br>
+  <br>
+
+  <ion-list lines="none">
+    <ion-list-header mode="ios">Uploaded Files</ion-list-header>
+
+    <ion-item-sliding>
+      <ion-item lines="none">
+        <ion-icon name="trending-up-outline" slot="start" color="watermelon"></ion-icon>
+        <ion-label><p>Video to Youtube</p></ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="watermelon">
+          <ion-icon slot="start" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+          More
+        </ion-item-option>
+        <ion-item-option color="secondary">
+          <ion-icon slot="start" name="archive"></ion-icon>
+          Archive
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item lines="none">
+        <ion-icon name="trending-up-outline" slot="start" color="emerald"></ion-icon>
+        <ion-label><p>Code to GitHub</p></ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="emerald">
+          <ion-icon slot="start" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+          More
+        </ion-item-option>
+        <ion-item-option color="secondary">
+          <ion-icon slot="start" name="archive"></ion-icon>
+          Archive
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item lines="none">
+        <ion-icon name="trending-up-outline" slot="start" color="blurple"></ion-icon>
+        <ion-label><p>Photo to Pinterest</p></ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="blurple">
+          <ion-icon slot="start" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+          More
+        </ion-item-option>
+        <ion-item-option color="secondary">
+          <ion-icon slot="start" name="archive"></ion-icon>
+          Archive
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item lines="none">
+        <ion-icon name="trending-up-outline" slot="start" color="asphal"></ion-icon>
+        <ion-label><p>File to Drive</p></ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="asphal">
+          <ion-icon slot="start" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+          More
+        </ion-item-option>
+        <ion-item-option color="secondary">
+          <ion-icon slot="start" name="archive"></ion-icon>
+          Archive
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+   
+  </ion-list>
+</ion-content>

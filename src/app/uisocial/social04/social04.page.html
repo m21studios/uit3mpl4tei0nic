@@ -1,0 +1,310 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-item lines="none">
+
+      <ion-icon name="flame-outline" slot="start" color="primary" class="animate__animated animate__bounceIn animate__infinite"></ion-icon>
+      
+      <!--avatar user + search bar items-->
+     <ion-item lines="none">
+       <ion-avatar slot="start">
+         <img src="../../../assets/profiles/p15.jpg" alt="">
+       </ion-avatar>
+       <ion-label>
+         <h1>Dana Doe</h1>
+         <p>Lorem, ipsum dolor.</p>
+       </ion-label>
+     </ion-item>
+
+     <!--back button-->
+     <ion-buttons slot="end">
+       <ion-back-button icon="close" color="primary" routerLink="/social"></ion-back-button>
+     </ion-buttons>
+
+    </ion-item>
+     
+  </ion-toolbar>
+  <!--toolbars icons options-->
+  <ion-toolbar>
+    <ion-segment scrollable value="home">
+      <ion-segment-button value="home">
+        <ion-icon name="home-outline" color="primary"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="friends">
+        <ion-icon name="people-circle-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="media">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="store">
+        <ion-icon name="cart-outline" ></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="notifications">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="menu" (click)="activeInputComponent()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+    <div style="height: 20px; width: 100%;"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <!--items friens-->
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p8.jpg" alt="" class="avatar-image"> 
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p5.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p11.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p18.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p16.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+    <ion-slide>
+      <ion-avatar>
+        <img src="../../../assets/profiles/p4.jpg" alt="" class="avatar-image">
+      </ion-avatar>
+    </ion-slide>
+  </ion-slides>
+
+  <!--stories-->
+  <ion-slides pager="false" [options]="slideStoriesOpts">
+    <ion-slide>
+      <ion-card>
+        <div style="height: 20px; width: 100%;"></div>
+        <!--stories header card-->
+        <ion-item lines="none">
+          <ion-avatar>
+            <img src="../../../assets/profiles/p21.jpg" alt="" class="avatar-image">
+          </ion-avatar>
+          <ion-label>
+            <h1 style="font-weight: 500; font-size: 22px; margin-left: 12px;">Jane Doe</h1>
+            <p style="font-weight: 100; font-size: 14px; margin-left: 12px;">June 10 at 05:35am</p>
+          </ion-label>
+          <ion-note slot="end">
+            <ion-icon name="ellipsis-vertical-outline" color="primary"></ion-icon>
+          </ion-note>
+        </ion-item>
+    
+        <!--stories content-->
+        <ion-item lines="none">
+          <p style="font-weight: 100; font-size: 14px; text-align: justify;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Nostrum, magnam ratione voluptate corrupti natus ut commodi 
+            nobis magni, sequi sunt harum minima eveniet iure. 
+          </p>
+        </ion-item>
+    
+        <!--stories image-->
+        <img src="../../../assets/travel/polynesia-3021072_1280.jpg" alt="" style="width: 100%; height: 220px;">
+        
+        <!--social icons-->
+        <ion-item lines="none">
+          <ion-icon name="happy-outline" slot="start" color="sun"></ion-icon>
+          <ion-icon name="heart-circle-outline" slot="start" color="tomato"></ion-icon>
+          <ion-icon name="share-social-outline" slot="end" color="primary"></ion-icon>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <p style="font-weight: 100; font-size: 12px;">85 Comments</p>
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <div style="height: 20px; width: 100%;"></div>
+        <!--stories header card-->
+        <ion-item lines="none">
+          <ion-avatar>
+            <img src="../../../assets/profiles/p4.jpg" alt="" class="avatar-image">
+          </ion-avatar>
+          <ion-label>
+            <h1 style="font-weight: 500; font-size: 22px; margin-left: 12px;">Jane Doe</h1>
+            <p style="font-weight: 100; font-size: 14px; margin-left: 12px;">June 10 at 05:35am</p>
+          </ion-label>
+          <ion-note slot="end">
+            <ion-icon name="ellipsis-vertical-outline" color="primary"></ion-icon>
+          </ion-note>
+        </ion-item>
+    
+        <!--stories content-->
+        <ion-item lines="none">
+          <p style="font-weight: 100; font-size: 14px; text-align: justify;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Nostrum, magnam ratione voluptate corrupti natus ut commodi 
+            nobis magni, sequi sunt harum minima eveniet iure. 
+          </p>
+        </ion-item>
+    
+        <!--stories image-->
+        <img src="../../../assets/travel/coast-505858_960_720.jpg" alt="" style="width: 100%; height: 220px;">
+        
+        <!--social icons-->
+        <ion-item lines="none">
+          <ion-icon name="happy-outline" slot="start" color="sun"></ion-icon>
+          <ion-icon name="heart-circle-outline" slot="start" color="tomato"></ion-icon>
+          <ion-icon name="share-social-outline" slot="end" color="primary"></ion-icon>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <p style="font-weight: 100; font-size: 12px;">85 Comments</p>
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <div style="height: 20px; width: 100%;"></div>
+        <!--stories header card-->
+        <ion-item lines="none">
+          <ion-avatar>
+            <img src="../../../assets/profiles/p2.jpg" alt="" class="avatar-image">
+          </ion-avatar>
+          <ion-label>
+            <h1 style="font-weight: 500; font-size: 22px; margin-left: 12px;">Jane Doe</h1>
+            <p style="font-weight: 100; font-size: 14px; margin-left: 12px;">June 10 at 05:35am</p>
+          </ion-label>
+          <ion-note slot="end">
+            <ion-icon name="ellipsis-vertical-outline" color="primary"></ion-icon>
+          </ion-note>
+        </ion-item>
+    
+        <!--stories content-->
+        <ion-item lines="none">
+          <p style="font-weight: 100; font-size: 14px; text-align: justify;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Nostrum, magnam ratione voluptate corrupti natus ut commodi 
+            nobis magni, sequi sunt harum minima eveniet iure. 
+          </p>
+        </ion-item>
+    
+        <!--stories image-->
+        <img src="../../../assets/travel/bora-bora-3023437_960_720.jpg" alt="" style="width: 100%; height: 220px;">
+        
+        <!--social icons-->
+        <ion-item lines="none">
+          <ion-icon name="happy-outline" slot="start" color="sun"></ion-icon>
+          <ion-icon name="heart-circle-outline" slot="start" color="tomato"></ion-icon>
+          <ion-icon name="share-social-outline" slot="end" color="primary"></ion-icon>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <p style="font-weight: 100; font-size: 12px;">85 Comments</p>
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <div style="height: 20px; width: 100%;"></div>
+        <!--stories header card-->
+        <ion-item lines="none">
+          <ion-avatar>
+            <img src="../../../assets/profiles/p14.jpg" alt="" class="avatar-image">
+          </ion-avatar>
+          <ion-label>
+            <h1 style="font-weight: 500; font-size: 22px; margin-left: 12px;">Jane Doe</h1>
+            <p style="font-weight: 100; font-size: 14px; margin-left: 12px;">June 10 at 05:35am</p>
+          </ion-label>
+          <ion-note slot="end">
+            <ion-icon name="ellipsis-vertical-outline" color="primary"></ion-icon>
+          </ion-note>
+        </ion-item>
+    
+        <!--stories content-->
+        <ion-item lines="none">
+          <p style="font-weight: 100; font-size: 14px; text-align: justify;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Nostrum, magnam ratione voluptate corrupti natus ut commodi 
+            nobis magni, sequi sunt harum minima eveniet iure. 
+          </p>
+        </ion-item>
+    
+        <!--stories image-->
+        <img src="../../../assets/travel/mosque-615415_960_720.jpg" alt="" style="width: 100%; height: 220px;">
+        
+        <!--social icons-->
+        <ion-item lines="none">
+          <ion-icon name="happy-outline" slot="start" color="sun"></ion-icon>
+          <ion-icon name="heart-circle-outline" slot="start" color="tomato"></ion-icon>
+          <ion-icon name="share-social-outline" slot="end" color="primary"></ion-icon>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <p style="font-weight: 100; font-size: 12px;">85 Comments</p>
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  
+  <!--last post-->
+  <ion-list lines="full">
+    <ion-list-header>Events</ion-list-header>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img src="../../../assets/profiles/p18.jpg" alt="" style="width: 35px; height: 35px;">
+      </ion-avatar>
+      <ion-text>
+        <p style="font-weight: 100; font-size: 14px;">
+          Lorem ipsum dolor sit amet, <strong color="primary">consectetur</strong> adipisicing elit. 
+          Quisquam voluptate placeat perferendis voluptatem similique adipisci.
+        </p>
+        <p style="font-weight: 100; font-size: 12px;">At 6:39pm</p>
+      </ion-text>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img src="../../../assets/profiles/p7.jpg" alt="" style="width: 35px; height: 35px;">
+      </ion-avatar>
+      <ion-label>
+        <p style="font-weight: 300; font-size: 14px;">Like you Photo</p>
+        <p style="font-weight: 100; font-size: 12px;">Yesterday At 10:15am</p>
+      </ion-label>
+      <ion-thumbnail slot="end">
+        <img src="../../../assets/travel/mosque-615415_960_720.jpg" alt="" style="border-radius: 5px 5px 5px 5px;">
+      </ion-thumbnail>
+    </ion-item>
+
+  </ion-list>
+
+  <!--new post-->
+  <div class="post-input animate__animated animate__bounceIn" *ngIf="activeInput">
+    <div style="height: 20px; width: 100%;"></div>
+    <ion-item lines="none">
+      <ion-label color="primary"><h1 style="font-weight: 500; font-size: 22px;">New Post</h1></ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-textarea placeholder="Enter more information here...">
+
+      </ion-textarea>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="heart-circle-outline" slot="end"></ion-icon>
+      <ion-icon name="camera-outline" slot="end" color="primary"></ion-icon>
+    </ion-item>
+    <ion-button color="primary" expand="block" mode="ios">Send Post</ion-button>
+  </div>
+  
+</ion-content>
