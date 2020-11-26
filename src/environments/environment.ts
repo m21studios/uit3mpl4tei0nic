@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  tokenMapBox:'pk.eyJ1IjoidGF2b2hlcmR1cSIsImEiOiJja2Q3aTYxd3EycXRwMnlteTZxcmYzMTN1In0.cVs8meFaIWCvH1Qt_xLszA',
+  tokenMapBox: 'you token !!!',
 };
 
 /*

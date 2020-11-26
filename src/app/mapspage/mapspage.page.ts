@@ -41,14 +41,6 @@ export class MapspagePage implements OnInit {
     this.buildMapLeaflet();
   }
 
-  /*map box config
-  var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
- 
-  mapboxgl.accessToken = 'pk.eyJ1IjoidGF2b2hlcmR1cSIsImEiOiJja2Q3aTYxd3EycXRwMnlteTZxcmYzMTN1In0.cVs8meFaIWCvH1Qt_xLszA';
-  var map = new mapboxgl.Map({
-  container: 'YOUR_CONTAINER_ELEMENT_ID',
-  style: 'mapbox://styles/mapbox/streets-v11'
-  });*/
 
   buildMap() {
     this.map = new mapboxgl.Map({
